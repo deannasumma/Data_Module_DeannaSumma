@@ -1,0 +1,20 @@
+CREATE TABLE grocerystore (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, aisle INTEGER, price NUMERIC);
+INSERT INTO grocerystore VALUES (1, "bread", 50, 2, 1.5);
+INSERT INTO grocerystore VALUES (2, "milk", 23, 4, 2.25);
+INSERT INTO grocerystore VALUES (3, "eggs", 90, 4, 3.23);
+INSERT INTO grocerystore VALUES (4, "chicken", 47, 6, 7.50);
+INSERT INTO grocerystore VALUES (5, "ground beef", 29, 6, 7.89);
+INSERT INTO grocerystore VALUES (6, "salmon", 18, 7, 11.20);
+INSERT INTO grocerystore VALUES (7, "shrimp", 113, 7, 12.56);
+INSERT INTO grocerystore VALUES (8, "cheese", 212, 4, 4.35);
+INSERT INTO grocerystore VALUES (9, "ritz cracker", 45, 8, 3.99);
+INSERT INTO grocerystore VALUES (10, "goldfish", 56, 8, 4.39);
+INSERT INTO grocerystore VALUES (11, "tortilla chips", 89, 8, 3.35);
+INSERT INTO grocerystore VALUES (12, "oreos", 32, 7, 5.10);
+INSERT INTO grocerystore VALUES (13, "cheerios", 54, 7, 4.29);
+INSERT INTO grocerystore VALUES (14, "cookie dough", 13, 4, 4.89);
+INSERT INTO grocerystore VALUES (15, "ice cream", 65, 4, 5.52);
+SELECT * FROM grocerystore;
+
+SELECT * FROM grocerystore GROUP BY price;
+SELECT item, sum(price) from grocerystore;
